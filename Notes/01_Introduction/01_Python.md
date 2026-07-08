@@ -1,6 +1,4 @@
-[Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)
-
-# 1.1 Python
+[Contents](../Contents.md) \| [Next (1.2 A First Program)](02_Hello_world.md)` # 1.1 Python
 
 ### What is Python?
 
