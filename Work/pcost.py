@@ -1,4 +1,6 @@
 # pcost.py
+import sys
+
 def portfolio_cost(filename):
     """Calculate the total cost of a portfolio from a CSV file."""
     total_cost = 0.0
@@ -20,5 +22,11 @@ def portfolio_cost(filename):
 
 # Test it
 if __name__ == "__main__":
-        cost = portfolio_cost("Data/portfolio.csv")
+        # Get filename from command line arguments
+        if len(sys.argv) != 2:
+            print("Usage: python3 pcost.py <filename>")
+            sys.exit(1)
+
+        filename = sys.argv[1] # This gets the argument from the command line
+        cost = portfolio_cost(filename)
         print(f"Total cost: ${cost:0.2f}")
